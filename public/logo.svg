@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Border Gradient: Lime Green to Cyan -->
+    <linearGradient id="studysync-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a3e635" />
+      <stop offset="50%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Icon Gradient -->
+    <linearGradient id="studysync-icon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bef264" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Glow Effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Rounded Container Background -->
+  <rect width="500" height="500" rx="40" fill="#0b1329"/>
+
+  <!-- Outer Hexagon Frame -->
+  <g transform="translate(250, 190)">
+    <!-- Thick Gradient Hexagon Border -->
+    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60" 
+             fill="#0f172a" 
+             stroke="url(#studysync-border-grad)" 
+             stroke-width="12" 
+             stroke-linejoin="round"
+             filter="url(#glow)" />
+    
+    <!-- Graduation Cap -->
+    <g transform="translate(0, -25)">
+      <!-- Cap Top Diamond -->
+      <polygon points="0,-35 60,0 0,35 -60,0" fill="url(#studysync-icon-grad)" />
+      <!-- Cap Base -->
+      <path d="M-32,8 C-32,22 32,22 32,8 L32,18 C32,32 -32,32 -32,18 Z" fill="#22c55e" />
+      <!-- Tassel -->
+      <path d="M50,3 L58,35 L54,36 L46,4" fill="#a3e635" />
+    </g>
+
+    <!-- Upward Checkmark Arrow inside Hexagon -->
+    <g transform="translate(0, 30)">
+      <path d="M-36,-10 L-10,16 L36,-30 L22,-44 L-10,-12 L-22,-24 Z" 
+            fill="url(#studysync-border-grad)" />
+      <!-- Arrow Tip -->
+      <path d="M22,-44 L46,-44 L46,-20 Z" fill="#38bdf8" />
+    </g>
+  </g>
+
+  <!-- Text Section -->
+  <g text-anchor="middle">
+    <!-- Title: StudySync -->
+    <text x="250" y="380" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="52" letter-spacing="1">
+      <tspan fill="#ffffff">Study</tspan><tspan fill="#38bdf8">Sync</tspan>
+    </text>
+
+    <!-- Subtitle Flanked by Gradient Lines -->
+    <line x1="40" y1="410" x2="110" y2="410" stroke="#a3e635" stroke-width="2.5" stroke-linecap="round" />
+    <text x="250" y="414" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="14" fill="#94a3b8" letter-spacing="2">
+      STUDENT PRODUCTIVITY &amp; PLACEMENT TRACKER
+    </text>
+    <line x1="390" y1="410" x2="460" y2="410" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>

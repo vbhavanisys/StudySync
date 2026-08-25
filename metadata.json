@@ -1,0 +1,6 @@
+{
+  "name": "StudySync",
+  "description": "Student productivity, academic notes hub, and placement tracking platform with real-time sync, AI assistance, and admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
